@@ -12,19 +12,43 @@
 
 
 <body>
-    <header class="navbar">
-        <div class="logo">ReVive<span>Me</span></div>
-        <nav>
-
-            <ul class="nav-links">
-                <li><a href="#">Health Conditions</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Plan</a></li>
-                <li><a href="/Bmi/Bmical.html">BMI</a></li>
+  <nav class="navbar">
+    <div class="container">
+  
+      <div class="navbar-header">
+        <button class="navbar-toggler" data-toggle="open-navbar1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#">
+          <h4>Your<span>Logo</span></h4>
+        </a>
+      </div>
+  
+      <div class="navbar-menu" id="open-navbar1">
+        <ul class="navbar-nav">
+          <li class=""><a href="#">Home</a></li>
+          <li class="navbar-dropdown">
+            <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+              โปรแกรมคำนวณ <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="dropdown" id="my-dropdown-id">
+              <li><a href="/ReviveMe/Bmi/Bmical.html">โปรแกรมคำนวณ BMI</a></li>
+              <li class="separator"></li>
+              <li><a href="/ReviveMe/Bmr/BmrCal.html">โปรแกรมคำนวณ BMR</a></li>
+              <li class="separator"></li>
+              <li><a href="/ReviveMe/Tdee/TdeeCal.html">โปรแกรมคำนวณ TDEE</a></li>
             </ul>
-
-        </nav>
-    </header>
+          </li>
+       
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="/ReviveMe/Bmi/Bmical.html">BMI</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>            
     <!-- <div class="loading-container" id="loading">
         <div class="spinner"></div>
     </div> -->
@@ -74,7 +98,7 @@
 
         
     <section class="explore">
-        <h3>Explore By</h3>
+        <h3>Health news type</h3>
         <div class="explore-icons">
             <div class="icon">
                 <img src="food.png" alt="Food">
@@ -90,7 +114,73 @@
 
             </div>
           </section>
+
+          <section class="tdee-section">
+            <div class="tdee-container">
+                <div class="tdee-image">
+                    <img src="/public/fitnessboy.png" alt="TDEE Example" class="tdee-img">
+                </div>
+                <div class="tdee-content">
+                    <h2>TDEE คืออะไร?</h2>
+                    <p>
+                        TDEE (Total Daily Energy Expenditure) คือค่าพลังงานที่ร่างกายของคุณใช้ในหนึ่งวัน 
+                        ซึ่งรวมทั้งพลังงานพื้นฐานที่ใช้เพื่อการดำรงชีวิต (BMR) และพลังงานที่ใช้ในกิจกรรมต่างๆ เช่น 
+                        การเดิน การออกกำลังกาย หรือการทำงาน
+                    </p>
+                    <ul>
+                        <li><b>ช่วยวางแผนการกิน:</b> รู้ว่าคุณควรกินพลังงานเท่าไหร่เพื่อรักษาน้ำหนัก</li>
+                        <li><b>ลดน้ำหนัก:</b> ทานให้น้อยกว่าค่า TDEE</li>
+                        <li><b>เพิ่มน้ำหนัก:</b> ทานให้มากกว่าค่า TDEE</li>
+                    </ul>
+                    <p>
+                        ด้วยการรู้ค่า TDEE คุณสามารถตั้งเป้าหมายในการลดหรือเพิ่มน้ำหนักได้อย่างแม่นยำ
+                        และช่วยปรับการกินและกิจกรรมให้เหมาะสมกับเป้าหมายของคุณ!
+                    </p>
+                    <button class="cta-button">คำนวณค่า TDEE ของคุณ</button>
+                </div>
+            </div>
+        </section>
+
+          <section class="how-it-works">
+            <h2>ข้อดีของการคำนวณ BMI</h2>
+            <p class="caption-header"> BMI (ดัชนีมวลกาย) คือค่าที่ใช้วัดความสัมพันธ์ระหว่างน้ำหนักและส่วนสูงของร่างกาย 
+              เพื่อประเมินสถานะสุขภาพเบื้องต้น เช่น น้ำหนักเกิน น้ำหนักปกติ หรือผอมเกินไป</p>
+            <div class="steps-container">
+              <div class="step">
+                <img src="/public/slim.png" alt="Step 1" />
+                <h3>1</h3>
+                <p>ช่วยประเมินความเสี่ยงต่อโรคที่เกี่ยวข้องกับน้ำหนัก เช่น โรคหัวใจและเบาหวาน</p>
+              </div>
+              <div class="step">
+                <img src="/public/midlesite.png" alt="Step 2" />
+                <h3>2</h3>
+                <p>เป็นเครื่องมือเบื้องต้นในการติดตามสถานะสุขภาพ</p>
+              </div>
+              <div class="step">
+                <img src="/public/middle2.png" alt="Step 3" />
+                <h3>3</h3>
+                <p>ช่วยกำหนดเป้าหมายสำหรับการลดน้ำหนักหรือเพิ่มน้ำหนัก</p>
+              </div>
+              
+            </div>
+          </section>
+         
+        <section>    <div class="container-BMR">
+          <div class="image-section">
+            <img class="image-full" src="/public/bmr-definition.png">
+          </div>
+          <div class="content-section">
+              <div class="content">
+                  <h1>BMR คืออะไร?</h1>
+                  <p>BMR (Basal Metabolic Rate) คือค่าพลังงานที่ร่างกายต้องการใช้ในขณะพักผ่อน เพื่อทำหน้าที่พื้นฐาน เช่น การหายใจ การไหลเวียนโลหิต และการทำงานของอวัยวะต่างๆ.</p>
+                  <!-- <p>Key factors influencing BMR include age, gender, weight, height, and body composition.</p> -->
+              </div>
+          </div>
+      </div>
+    </section>
+     
           </main>
+
     <footer>
         <p>© 2024 HealthZone. All rights reserved.</p>
     </footer>
