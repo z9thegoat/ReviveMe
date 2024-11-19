@@ -48,12 +48,111 @@
 
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="/Bmi/Bmical.html">BMI</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <section>BMI PAGE</section>
+    <section class="bmi-calculator">
+      <div class="bmi-title">
+        <h1>โปรแกรมคำนวณ BMI ดัชนีมวลกาย</h1>
+        <h2>BMI Calculator</h2>
+      </div>
+
+      <div class="calculator-container">
+        <!-- Input Form -->
+        <div class="bmi-form">
+          <label>
+            เพศ:
+
+            <div class="gender">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label for="male">ชาย</label>
+
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">หญิง</label>
+            </div>
+          </label>
+
+          <div class="form-group">
+            <span>อายุ:</span>
+            <input class="form-field" type="number" id="age" placeholder="ปี" />
+          </div>
+
+          <div class="form-group">
+            <span>ส่วนสูง :</span>
+            <input
+              class="form-field"
+              type="number"
+              id="height"
+              placeholder="ซม."
+            />
+          </div>
+
+          <div class="form-group">
+            <span>น้ำหนัก :</span>
+            <input
+              class="form-field"
+              type="number"
+              id="weight"
+              placeholder="กก."
+            />
+          </div>
+
+          <!-- <label>อายุ: <input type="number" id="age" placeholder="ปี" /></label>
+          <label
+            >ส่วนสูง: <input type="number" id="height" placeholder="ซม."
+          /></label>
+          <label
+            >น้ำหนัก: <input type="number" id="weight" placeholder="กก."
+          /></label> -->
+
+          <button id="calculate-btn">คำนวณ</button>
+        </div>
+
+        <!-- Result -->
+        <div class="bmi-result">
+          <h3>ดัชนีมวลกาย (BMI)</h3>
+          <table>
+            <tr>
+              <td>ดัชนีมวลกาย (BMI)</td>
+              <td id="bmi-value">-</td>
+            </tr>
+            <tr>
+              <td>หมวดหมู่ BMI</td>
+              <td id="bmi-category">-</td>
+            </tr>
+            <tr>
+              <td>ช่วง BMI ที่เหมาะสม</td>
+              <td>18.5 kg/m² - 25 kg/m²</td>
+            </tr>
+            <tr>
+              <td>น้ำหนักที่เหมาะสมสำหรับความสูง</td>
+              <td id="ideal-weight-range">-</td>
+            </tr>
+            <tr>
+              <td>เพิ่มน้ำหนักเพื่อให้ถึงค่าดัชนีมวลกายของ 18.5 kg/m²</td>
+              <td id="gain-weight">-</td>
+            </tr>
+            <tr>
+              <td>ลดน้ำหนักเพื่อให้ได้ค่าดัชนีมวลกายของ 25 kg/m²</td>
+              <td id="lose-weight">-</td>
+            </tr>
+            <tr>
+              <td>ดัชนี Ponderal</td>
+              <td id="ponderal-index">-</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
     <script src="/Bmi/script.js"></script>
   </body>
 </html>

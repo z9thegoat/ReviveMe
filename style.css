@@ -267,39 +267,50 @@ li {
 }
 
 /* Explore Section */
+/* General styling for the section */
 .explore {
   text-align: center;
-  padding: 50px 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .explore h3 {
-  margin-bottom: 15px;
-  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
+/* Icon container styling */
 .explore-icons {
   display: flex;
   justify-content: center;
-  gap: 30px; /* เพิ่มช่องว่างระหว่างไอคอน */
+  gap: 50px;
 }
 
 .icon {
-  width: 200px; /* กำหนดขนาดวงกลม */
-  height: 200px; /* กำหนดขนาดวงกลม */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s;
-  overflow: hidden; /* ซ่อนส่วนเกินเพื่อให้รูปภาพอยู่ในกรอบ */
-  border-radius: 50%; /* ทำให้กรอบเป็นวงกลม */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* เงาเล็กน้อย */
+  text-align: center;
+  max-width: 200px;
 }
+
 .icon img {
-  width: 100%; /* ปรับให้รูปครอบคลุมกรอบ */
-  height: 100%; /* ปรับให้รูปครอบคลุมกรอบ */
-  object-fit: cover; /* ทำให้ภาพไม่บิดเบี้ยว */
-  border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+  width: 100%; /* Adjust size of the image */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
 }
+
+.icon img:hover {
+  transform: scale(1.1); /* Enlarge image slightly on hover */
+}
+
+.icon p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+}
+
 .icon:hover {
   transform: scale(1.15); /* เพิ่มเอฟเฟกต์ขยายเมื่อชี้เมาส์ */
 }
@@ -654,7 +665,6 @@ footer {
   object-fit: cover;
   object-position: 100% -150px;
 }
-.caption-header{
+.caption-header {
   margin: 2rem;
-  
 }
