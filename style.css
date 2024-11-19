@@ -654,3 +654,7 @@ footer {
   object-fit: cover;
   object-position: 100% -150px;
 }
+.caption-header{
+  margin: 2rem;
+  
+}
