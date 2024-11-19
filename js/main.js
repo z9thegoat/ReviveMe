@@ -1,4 +1,3 @@
-console.log("welcome wo Help");
 
 // Slide Navigation
 let slideIndex = 1;
