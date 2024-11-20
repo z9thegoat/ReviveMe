@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator Steps</title>
     <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/Bmi/style.css" />
+    <link rel="stylesheet" href="/Bmr/style.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -54,6 +54,62 @@
       </div>
     </nav>
     <section>BMR PAGE</section>
-    <script src="/Bmi/script.js"></script>
+    <div class="container">
+      <div class="form-section">
+          <h1>โปรแกรมคำนวณ BMR</h1>
+          <form id="bmr-form">
+              <div class="form-group gender-group">
+                  <label>เพศ:</label>
+                  <label><input type="radio" name="gender" value="male" checked> ชาย</label>
+                  <label><input type="radio" name="gender" value="female"> หญิง</label>
+              </div>
+              <div class="form-group">
+                  <label>อายุ:</label>
+                  <input type="number" id="age" placeholder="ปี" required>
+              </div>
+              <div class="form-group">
+                  <label>ส่วนสูง:</label>
+                  <input type="number" id="height" placeholder="ซม." required>
+              </div>
+              <div class="form-group">
+                  <label>น้ำหนัก:</label>
+                  <input type="number" id="weight" placeholder="กก." required>
+              </div>
+              <button type="button" id="calculate">คำนวณ</button>
+          </form>
+      </div>
+
+      <div class="result-section">
+          <h2>ผลลัพธ์ BMR</h2>
+          <div id="bmr-result">-</div>
+          <table>
+              <thead>
+                  <tr>
+                      <th>ข้อมูล</th>
+                      <th>รายละเอียด</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>BMR (พลังงานพื้นฐาน)</td>
+                      <td id="bmr-value">-</td>
+                  </tr>
+                  <tr>
+                      <td>พลังงานที่ต้องใช้ต่อวัน (กิจกรรมเบา)</td>
+                      <td id="light-activity">-</td>
+                  </tr>
+                  <tr>
+                      <td>พลังงานที่ต้องใช้ต่อวัน (กิจกรรมปานกลาง)</td>
+                      <td id="moderate-activity">-</td>
+                  </tr>
+                  <tr>
+                      <td>พลังงานที่ต้องใช้ต่อวัน (กิจกรรมหนัก)</td>
+                      <td id="heavy-activity">-</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+    <script src="/Bmr/script.js"></script>
   </body>
 </html>
