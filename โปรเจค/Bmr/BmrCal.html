@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator Steps</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/Bmr/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggler" data-toggle="open-navbar1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="/index.html">
+            <h4>Your<span>Logo</span></h4>
+          </a>
+        </div>
+
+        <div class="navbar-menu" id="open-navbar1">
+          <ul class="navbar-nav">
+            <li class=""><a href="#">Home</a></li>
+            <li class="navbar-dropdown">
+              <a
+                href="#"
+                class="dropdown-toggler"
+                data-dropdown="my-dropdown-id"
+              >
+                โปรแกรมคำนวณ <i class="fa fa-angle-down"></i>
+              </a>
+              <ul class="dropdown" id="my-dropdown-id">
+                <li>
+                  <a href="/Bmi/Bmical.html">โปรแกรมคำนวณ BMI</a>
+                </li>
+                <li class="separator"></li>
+                <li>
+                  <a href="/Bmr/BmrCal.html">โปรแกรมคำนวณ BMR</a>
+                </li>
+                <li class="separator"></li>
+                <li>
+                  <a href="/Tdee/TdeeCal.html">โปรแกรมคำนวณ TDEE</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>BMR PAGE</section>
+    <div class="container">
+      <div class="form-section">
+          <h1>โปรแกรมคำนวณ BMR</h1>
+          <form id="bmr-form">
+              <div class="form-group gender-group">
+                  <label>เพศ:</label>
+                  <label><input type="radio" name="gender" value="male" checked> ชาย</label>
+                  <label><input type="radio" name="gender" value="female"> หญิง</label>
+              </div>
+              <div class="form-group">
+                  <label>อายุ:</label>
+                  <input type="number" id="age" placeholder="ปี" required>
+              </div>
+              <div class="form-group">
+                  <label>ส่วนสูง:</label>
+                  <input type="number" id="height" placeholder="ซม." required>
+              </div>
+              <div class="form-group">
+                  <label>น้ำหนัก:</label>
+                  <input type="number" id="weight" placeholder="กก." required>
+              </div>
+              <button type="button" id="calculate">คำนวณ</button>
+          </form>
+      </div>
+
+      <div class="result-section">
+          <h2>ผลลัพธ์ BMR</h2>
+          <div id="bmr-result">-</div>
+          <table>
+              <thead>
+                  <tr>
+                      <th>ข้อมูล</th>
+                      <th>รายละเอียด</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>BMR (พลังงานพื้นฐาน)</td>
+                      <td id="bmr-value">-</td>
+                  </tr>
+                  <tr>
+                      <td>พลังงานที่ต้องใช้ต่อวัน (กิจกรรมเบา)</td>
+                      <td id="light-activity">-</td>
+                  </tr>
+                  <tr>
+                      <td>พลังงานที่ต้องใช้ต่อวัน (กิจกรรมปานกลาง)</td>
+                      <td id="moderate-activity">-</td>
+                  </tr>
+                  <tr>
+                      <td>พลังงานที่ต้องใช้ต่อวัน (กิจกรรมหนัก)</td>
+                      <td id="heavy-activity">-</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+    <script src="/Bmr/script.js"></script>
+  </body>
+</html>
