@@ -558,7 +558,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
-  background-color: #2e7d32;
+  background-color: #2e717d;
 }
 
 .tdee-container {
@@ -595,7 +595,7 @@ footer {
 .tdee-content h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #2e7d32;
+  color: #030443;
   margin-bottom: 20px;
 }
 
@@ -617,7 +617,7 @@ footer {
 }
 
 .tdee-content ul li b {
-  color: #2e7d32;
+  color: #030443;
 }
 
 .cta-button {
