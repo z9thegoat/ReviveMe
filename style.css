@@ -337,34 +337,43 @@ li {
 .next {
   cursor: pointer;
   position: absolute;
+  bottom: 10px; /* Position the buttons near the bottom */
+  width: 40px; /* Adjust the size of the buttons */
+  height: 40px; /* Make it a perfect circle */
+  margin: 0 10px; /* Space between buttons */
+  padding: 0;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white; /* เปลี่ยนสีตัวอักษรให้มองเห็นชัด */
+  color: white; /* Text color for better visibility */
   font-weight: bold;
   font-size: 15px;
-  transition: 0.6s ease;
-  background-color: rgb(15, 144, 224, 0.712); /* เปลี่ยนพื้นหลังเป็นสีฟ้า */
-  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  transition: 0.3s ease; /* Smoother transition */
+  background-color: rgba(
+    15,
+    144,
+    224,
+    0.85
+  ); /* Slightly transparent blue background */
+  border-radius: 50%; /* Makes the button circular */
+  display: flex;
+  justify-content: center; /* Center the text/icon horizontally */
+  align-items: center; /* Center the text/icon vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  left: -16;
-}
-
-/* On hover, add a blue background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(
-    1,
-    2,
-    3,
-    0.712
-  ); /* เปลี่ยนสี hover เป็นสีฟ้าโปร่งแสง */
+  background-color: rgba(15, 144, 224, 1); /* Fully opaque blue on hover */
+  transform: scale(1.1); /* Slight zoom effect */
 }
+
+.prev {
+  left: 10%; /* Position the previous button to the left */
+}
+
+.next {
+  right: 10%; /* Position the next button to the right */
+}
+
 /* Caption text */
 .text {
   color: #f2f2f2;
