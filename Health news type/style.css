@@ -200,249 +200,304 @@ a {
   position: relative;
 }
 .navbar .navbar-header > a span {
-    color: #66f;
-  }
-  
+  color: #66f;
+}
+
+.navbar .navbar-header h4 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+@media (max-width: 768px) {
   .navbar .navbar-header h4 {
-    font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
   }
-  @media (max-width: 768px) {
-    .navbar .navbar-header h4 {
-      font-size: 1.05rem;
-    }
-  }
-
-.content-section {
-    padding: 2rem 3rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right:auto;
-    background-color: #f9f9f9;
-    border-radius: 9px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .content-section h1 {
-    font-size: 2.25rem;
-    color: #333;
-    margin-bottom: 1rem;
-    font-weight: 500;
-  }
-  
-  .content-section p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  .content-section h2 {
-    font-size: 1.5rem;
-    color: #3c4250;
-    margin-bottom: 1rem;
-    font-weight: 600;
-  }
-  
-  .content-section ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .content-section ul li {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 0.75rem;
-    position: relative;
-  }
-  
-  .content-section ul li:before {
-    content: "✔";
-    position: absolute;
-    left: -1.5rem;
-    top: 0;
-    color: rgb(5, 139, 41);
-  }
-  
-  .content-section p:last-child {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .content-section {
-      padding: 1.5rem 0.75rem;
-    }
-  
-    .content-section h1 {
-      font-size: 1.75rem;
-    }
-  
-    .content-section p,
-    .content-section h2 {
-      font-size: 1rem;
-    }
-  
-    .content-section ul li {
-      font-size: 1rem;
-    }
-  }
-
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  .content-section {
-    padding: 2.5rem 3rem;
-    max-width: 1200px;
-    margin: 2rem auto; /* เพิ่มระยะห่างด้านบน-ล่าง */
-    background-color: #ffffff;
-    border-radius: 12px; /* ขอบมนขึ้น */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12); /* เพิ่มเงาให้ดูนูนขึ้น */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟกต์การขยับ */
 }
 
-.content-section:hover {
-    transform: translateY(-10px); /* ยกกล่องขึ้นเมื่อ hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* เงาเพิ่มขึ้น */
+.content-section {
+  padding: 2rem 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9f9f9;
+  border-radius: 9px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .content-section h1 {
-    font-size: 2.5rem; /* ขยายขนาดหัวข้อ */
-    color: #222;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    text-align: center; /* จัดให้อยู่กลาง */
+  font-size: 2.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .content-section h2 {
-    font-size: 1.75rem;
-    color: #333;
-    margin-bottom: 1.2rem;
-    font-weight: 600;
-    border-left: 4px solid #66f; /* เส้นสีเพื่อเน้นหัวข้อ */
-    padding-left: 1rem;
+  font-size: 1.5rem;
+  color: #3c4250;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.content-section ul li:before {
-    content: "✔";
-    position: absolute;
-    left: -2rem;
-    top: 0.2rem; /* ขยับให้อยู่แนวเดียวกับข้อความ */
-    color: rgb(34, 139, 34); /* ใช้สีเขียวเข้ม */
-    font-size: 1.3rem;
-}
-footer {
-    background-color: #222;
-    color: #ddd;
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 1rem;
-    border-top: 3px solid #66f; /* เพิ่มแถบสีฟ้าด้านบน */
-}
-
-footer a {
-    color: #66f;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-.navbar {
-    position: sticky; /* ให้ navbar ติดด้านบน */
-    top: 0;
-    z-index: 999;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.navbar:hover {
-    background-color: #f9f9f9; /* เปลี่ยนสีพื้นหลังเมื่อเลื่อน */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
-}
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.925rem;
-    background: linear-gradient(120deg, #ff9a9e, #fad0c4); /* ไล่ระดับสีชมพู-พีช */
-    color: #333;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-}
-.content-section {
-    padding: 2.5rem 3rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    background: linear-gradient(to right, #fff, #e4f9f5); /* ไล่สีขาวไปเขียวอ่อน */
-    border-radius: 16px; /* ขอบมนขึ้น */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.content-section:hover {
-    transform: translateY(-10px); /* ยกกล่องขึ้น */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-}
-
-.content-section h1 {
-    font-size: 2.5rem;
-    color: #ff6363; /* สีแดงสด */
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.content-section h2 {
-    font-size: 1.75rem;
-    color: #3c4250;
-    margin-bottom: 1.2rem;
-    font-weight: 600;
-    border-left: 4px solid #00d4ff; /* เส้นสีฟ้าสด */
-    padding-left: 1rem;
+.content-section ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .content-section ul li {
-    font-size: 1.25rem;
-    color: #333;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    position: relative;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+  position: relative;
 }
 
 .content-section ul li:before {
-    content: "✔";
-    position: absolute;
-    left: -2rem;
-    top: 0;
-    color: #22c55e; /* สีเขียวสด */
-    font-size: 1.5rem;
+  content: "✔";
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  color: rgb(5, 139, 41);
+}
+
+.content-section p:last-child {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .content-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .content-section p,
+  .content-section h2 {
+    font-size: 1rem;
+  }
+
+  .content-section ul li {
+    font-size: 1rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.content-section {
+  padding: 2.5rem 3rem;
+  max-width: 1200px;
+  margin: 2rem auto; /* เพิ่มระยะห่างด้านบน-ล่าง */
+  background-color: #ffffff;
+  border-radius: 12px; /* ขอบมนขึ้น */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12); /* เพิ่มเงาให้ดูนูนขึ้น */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟกต์การขยับ */
+}
+
+.content-section:hover {
+  transform: translateY(-10px); /* ยกกล่องขึ้นเมื่อ hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* เงาเพิ่มขึ้น */
+}
+
+.content-section h1 {
+  font-size: 2.5rem; /* ขยายขนาดหัวข้อ */
+  color: #222;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center; /* จัดให้อยู่กลาง */
+}
+
+.content-section h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  border-left: 4px solid #66f; /* เส้นสีเพื่อเน้นหัวข้อ */
+  padding-left: 1rem;
+}
+
+.content-section ul li:before {
+  content: "✔";
+  position: absolute;
+  left: -2rem;
+  top: 0.2rem; /* ขยับให้อยู่แนวเดียวกับข้อความ */
+  color: rgb(34, 139, 34); /* ใช้สีเขียวเข้ม */
+  font-size: 1.3rem;
 }
 footer {
-    background: linear-gradient(90deg, #66f, #00d4ff); /* ไล่สีฟ้าสดใส */
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 1rem;
-    border-top: 4px solid #ff9a9e; /* เส้นขอบสีชมพู */
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  border-top: 3px solid #66f; /* เพิ่มแถบสีฟ้าด้านบน */
 }
 
 footer a {
-    color: #fffa65; /* สีเหลือง */
-    text-decoration: none;
-    font-weight: bold;
+  color: #66f;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
-    color: #fff;
-    text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.navbar {
+  position: sticky; /* ให้ navbar ติดด้านบน */
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #f9f9f9; /* เปลี่ยนสีพื้นหลังเมื่อเลื่อน */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.925rem;
+  background: linear-gradient(
+    120deg,
+    #ff9a9e,
+    #fad0c4
+  ); /* ไล่ระดับสีชมพู-พีช */
+  color: #333;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.content-section {
+  padding: 2.5rem 3rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: linear-gradient(
+    to right,
+    #fff,
+    #e4f9f5
+  ); /* ไล่สีขาวไปเขียวอ่อน */
+  border-radius: 16px; /* ขอบมนขึ้น */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+  transform: translateY(-10px); /* ยกกล่องขึ้น */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+.content-section h1 {
+  font-size: 2.5rem;
+  color: #ff6363; /* สีแดงสด */
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 1.75rem;
+  color: #3c4250;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  border-left: 4px solid #00d4ff; /* เส้นสีฟ้าสด */
+  padding-left: 1rem;
+}
+
+.content-section ul li {
+  font-size: 1.25rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.content-section ul li:before {
+  content: "✔";
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  color: #22c55e; /* สีเขียวสด */
+  font-size: 1.5rem;
+}
+footer {
+  background: linear-gradient(90deg, #66f, #00d4ff); /* ไล่สีฟ้าสดใส */
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  border-top: 4px solid #ff9a9e; /* เส้นขอบสีชมพู */
+}
+
+footer a {
+  color: #fffa65; /* สีเหลือง */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* Explore Section */
+/* General styling for the section */
+.explore {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.explore h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Icon container styling */
+.explore-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.icon {
+  text-align: center;
+  max-width: 200px;
+}
+
+.icon img {
+  width: 100%; /* Adjust size of the image */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icon img:hover {
+  transform: scale(1.1); /* Enlarge image slightly on hover */
+}
+
+.icon p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+}
+
+.icon:hover {
+  transform: scale(1.15); /* เพิ่มเอฟเฟกต์ขยายเมื่อชี้เมาส์ */
 }

@@ -315,13 +315,6 @@ li {
   transform: scale(1.15); /* เพิ่มเอฟเฟกต์ขยายเมื่อชี้เมาส์ */
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
 /* Reset */
 
 /* Slideshow container */
@@ -363,8 +356,14 @@ footer {
 }
 
 /* On hover, add a blue background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(1, 2, 3, 0.712); /* เปลี่ยนสี hover เป็นสีฟ้าโปร่งแสง */
+.prev:hover,
+.next:hover {
+  background-color: rgba(
+    1,
+    2,
+    3,
+    0.712
+  ); /* เปลี่ยนสี hover เป็นสีฟ้าโปร่งแสง */
 }
 /* Caption text */
 .text {
@@ -654,7 +653,7 @@ footer {
   padding: 20px;
   background-color: #f0f0f0;
 }
-.content {
+.content-img {
   max-width: 700px;
   text-align: center;
 }

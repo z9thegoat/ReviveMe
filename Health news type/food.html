@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food - HealthZone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <div style="min-height: 80vh">
+      <nav class="navbar">
         <div class="container">
           <div class="navbar-header">
             <button class="navbar-toggler" data-toggle="open-navbar1">
@@ -19,10 +22,9 @@
               <h4>Revive<span>Me</span></h4>
             </a>
           </div>
-  
+
           <div class="navbar-menu" id="open-navbar1">
             <ul class="navbar-nav">
-              <li class=""><a href="#">Home</a></li>
               <li class="navbar-dropdown">
                 <a
                   href="#"
@@ -45,25 +47,115 @@
                   </li>
                 </ul>
               </li>
-  
-              <li><a href="#">About</a></li>
+
+              <li><a href="/about/about.html">About</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <section class="content-section">
+      <section class="content-section">
         <h1>Food for a Healthy Lifestyle</h1>
-        <p>อาหารที่คุณเลือกมีผลต่อสุขภาพและความเป็นอยู่ของคุณอย่างมาก การเลือกอาหารที่ดีสามารถช่วยในการป้องกันโรคต่างๆ และช่วยในการรักษาร่างกายให้แข็งแรง</p>
+        <p>
+          อาหารที่คุณเลือกมีผลต่อสุขภาพและความเป็นอยู่ของคุณอย่างมาก
+          การเลือกอาหารที่ดีสามารถช่วยในการป้องกันโรคต่างๆ
+          และช่วยในการรักษาร่างกายให้แข็งแรง
+        </p>
         <h2>Healthy Eating Tips</h2>
         <ul>
-            <li>กินผักและผลไม้ให้หลากหลาย</li>
-            <li>หลีกเลี่ยงอาหารที่มีน้ำตาลและไขมันสูง</li>
-            <li>เลือกอาหารที่มีแหล่งโปรตีนคุณภาพ เช่น ปลา ไก่ ถั่ว</li>
-            <li>ดื่มน้ำให้เพียงพอในแต่ละวัน</li>
+          <li>กินผักและผลไม้ให้หลากหลาย</li>
+          <li>หลีกเลี่ยงอาหารที่มีน้ำตาลและไขมันสูง</li>
+          <li>เลือกอาหารที่มีแหล่งโปรตีนคุณภาพ เช่น ปลา ไก่ ถั่ว</li>
+          <li>ดื่มน้ำให้เพียงพอในแต่ละวัน</li>
         </ul>
-        <p>การเลือกอาหารที่ดีต่อสุขภาพไม่เพียงแต่ช่วยในการรักษาน้ำหนัก แต่ยังช่วยให้ระบบร่างกายทำงานได้ดีขึ้น</p>
-    </section>
-
-</body>
+        <p>
+          การเลือกอาหารที่ดีต่อสุขภาพไม่เพียงแต่ช่วยในการรักษาน้ำหนัก
+          แต่ยังช่วยให้ระบบร่างกายทำงานได้ดีขึ้น
+        </p>
+      </section>
+      <section class="explore">
+        <h3>Health news type</h3>
+        <div class="explore-icons">
+          <div class="icon">
+            <a href="/Health news type/food.html">
+              <img src="/food.png" alt="Food" />
+              <p>Food</p>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="/Health news type/sleep.html">
+              <img src="/sleeping.png" alt="Sleep" />
+              <p>Sleep</p>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="/Health news type/fitness.html">
+              <img src="/exercising.png" alt="Fitness" />
+              <p>Fitness</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer">
+      <div class="bubbles">
+        <!-- Generate 128 bubble divs dynamically using JavaScript for loop -->
+        <!-- Example bubbles -->
+        <div
+          class="bubble"
+          style="
+            --size: 3.2rem;
+            --distance: 7.3rem;
+            --position: 40%;
+            --time: 3.1s;
+            --delay: -2.4s;
+          "
+        ></div>
+        <div
+          class="bubble"
+          style="
+            --size: 4.5rem;
+            --distance: 9.2rem;
+            --position: 55%;
+            --time: 3.8s;
+            --delay: -1.9s;
+          "
+        ></div>
+        <!-- Add more dynamically as needed -->
+      </div>
+      <div class="content">
+        <div>
+          <div style="min-height: 50px">
+            <img class="logo" src="/public/new_logo_spu07.gif" alt="Logo" />
+          </div>
+        </div>
+        <div>
+          <a
+            class="image"
+            href="/about/about.html"
+            target="_blank"
+            style="
+              background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg');
+            "
+          ></a>
+          <p>©2024 SPU</p>
+        </div>
+      </div>
+    </div>
+    <svg style="position: fixed; top: 100vh">
+      <defs>
+        <filter id="blob">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="blob"
+          />
+          <!-- feComposite was commented in Pug and not added here -->
+        </filter>
+      </defs>
+    </svg>
+    <script src="script.js"></script>
+  </body>
 </html>

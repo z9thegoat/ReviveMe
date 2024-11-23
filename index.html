@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReViveMe</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
     
 </head>
 
@@ -27,7 +28,7 @@
   
       <div class="navbar-menu" id="open-navbar1">
         <ul class="navbar-nav">
-          <li class=""><a href="#">Home</a></li>
+          
           <li class="navbar-dropdown">
             <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
               โปรแกรมคำนวณ <i class="fa fa-angle-down"></i>
@@ -201,9 +202,65 @@
      
           </main>
 
-    <footer>
-        <p>© 2024 HealthZone. All rights reserved.</p>
-    </footer>
+          <div class="footer">
+            <div class="bubbles">
+              <!-- Generate 128 bubble divs dynamically using JavaScript for loop -->
+              <!-- Example bubbles -->
+              <div
+                class="bubble"
+                style="
+                  --size: 3.2rem;
+                  --distance: 7.3rem;
+                  --position: 40%;
+                  --time: 3.1s;
+                  --delay: -2.4s;
+                "
+              ></div>
+              <div
+                class="bubble"
+                style="
+                  --size: 4.5rem;
+                  --distance: 9.2rem;
+                  --position: 55%;
+                  --time: 3.8s;
+                  --delay: -1.9s;
+                "
+              ></div>
+              <!-- Add more dynamically as needed -->
+            </div>
+            <div class="content">
+              <div>
+                <div style="min-height: 50px">
+                  <img class="logo" src="/public/new_logo_spu07.gif" alt="Logo" />
+                </div>
+              </div>
+              <div>
+                <a
+                  class="image"
+                  href="/about/about.html"
+                  target="_blank"
+                  style="
+                    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg');
+                  "
+                ></a>
+                <p>©2024 SPU</p>
+              </div>
+            </div>
+          </div>
+          <svg style="position: fixed; top: 100vh">
+            <defs>
+              <filter id="blob">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                  result="blob"
+                />
+                <!-- feComposite was commented in Pug and not added here -->
+              </filter>
+            </defs>
+          </svg>
 
     <script src="/js/main.js"></script>
 </body>

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness - HealthZone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <div style="min-height: 80vh">
+      <nav class="navbar">
         <div class="container">
           <div class="navbar-header">
             <button class="navbar-toggler" data-toggle="open-navbar1">
@@ -19,10 +23,9 @@
               <h4>Revive<span>Me</span></h4>
             </a>
           </div>
-  
+
           <div class="navbar-menu" id="open-navbar1">
             <ul class="navbar-nav">
-              <li class=""><a href="#">Home</a></li>
               <li class="navbar-dropdown">
                 <a
                   href="#"
@@ -45,25 +48,121 @@
                   </li>
                 </ul>
               </li>
-  
-              <li><a href="#">About</a></li>
+
+              <li><a href="/about/about.html">About</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <section class="content-section">
+      <section class="content-section">
         <h1>Fitness for a Healthy Lifestyle</h1>
-        <p>การออกกำลังกายเป็นสิ่งสำคัญในการรักษาสุขภาพที่ดี โดยการออกกำลังกายสามารถช่วยเสริมสร้างกล้ามเนื้อ เพิ่มความแข็งแรงของร่างกาย และช่วยลดความเสี่ยงจากการเกิดโรคต่างๆ</p>
+        <p>
+          การออกกำลังกายเป็นสิ่งสำคัญในการรักษาสุขภาพที่ดี
+          โดยการออกกำลังกายสามารถช่วยเสริมสร้างกล้ามเนื้อ
+          เพิ่มความแข็งแรงของร่างกาย และช่วยลดความเสี่ยงจากการเกิดโรคต่างๆ
+        </p>
         <h2>Fitness Tips</h2>
         <ul>
-            <li>เริ่มต้นด้วยการออกกำลังกายที่ไม่หนักเกินไป และค่อยๆ เพิ่มความยากขึ้น</li>
-            <li>การฝึกฝนกล้ามเนื้อทุกส่วนอย่างสม่ำเสมอจะช่วยเพิ่มความแข็งแรงของร่างกาย</li>
-            <li>หากเป้าหมายคือการลดน้ำหนัก ควรทำการฝึกคาร์ดิโออย่างน้อย 3-4 ครั้งต่อสัปดาห์</li>
-            <li>การพักผ่อนเป็นสิ่งสำคัญเพื่อให้กล้ามเนื้อฟื้นตัวและเติบโต</li>
+          <li>
+            เริ่มต้นด้วยการออกกำลังกายที่ไม่หนักเกินไป และค่อยๆ เพิ่มความยากขึ้น
+          </li>
+          <li>
+            การฝึกฝนกล้ามเนื้อทุกส่วนอย่างสม่ำเสมอจะช่วยเพิ่มความแข็งแรงของร่างกาย
+          </li>
+          <li>
+            หากเป้าหมายคือการลดน้ำหนัก ควรทำการฝึกคาร์ดิโออย่างน้อย 3-4
+            ครั้งต่อสัปดาห์
+          </li>
+          <li>การพักผ่อนเป็นสิ่งสำคัญเพื่อให้กล้ามเนื้อฟื้นตัวและเติบโต</li>
         </ul>
-        <p>การออกกำลังกายที่มีความหลากหลายและสม่ำเสมอจะทำให้คุณสามารถรักษาร่างกายให้แข็งแรงและสมดุลได้ตลอดชีวิต</p>
-    </section>
-
-</body>
+        <p>
+          การออกกำลังกายที่มีความหลากหลายและสม่ำเสมอจะทำให้คุณสามารถรักษาร่างกายให้แข็งแรงและสมดุลได้ตลอดชีวิต
+        </p>
+      </section>
+      <section class="explore">
+        <h3>Health news type</h3>
+        <div class="explore-icons">
+          <div class="icon">
+            <a href="/Health news type/food.html">
+              <img src="/food.png" alt="Food" />
+              <p>Food</p>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="/Health news type/sleep.html">
+              <img src="/sleeping.png" alt="Sleep" />
+              <p>Sleep</p>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="/Health news type/fitness.html">
+              <img src="/exercising.png" alt="Fitness" />
+              <p>Fitness</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer">
+      <div class="bubbles">
+        <!-- Generate 128 bubble divs dynamically using JavaScript for loop -->
+        <!-- Example bubbles -->
+        <div
+          class="bubble"
+          style="
+            --size: 3.2rem;
+            --distance: 7.3rem;
+            --position: 40%;
+            --time: 3.1s;
+            --delay: -2.4s;
+          "
+        ></div>
+        <div
+          class="bubble"
+          style="
+            --size: 4.5rem;
+            --distance: 9.2rem;
+            --position: 55%;
+            --time: 3.8s;
+            --delay: -1.9s;
+          "
+        ></div>
+        <!-- Add more dynamically as needed -->
+      </div>
+      <div class="content">
+        <div>
+          <div style="min-height: 50px">
+            <img class="logo" src="/public/new_logo_spu07.gif" alt="Logo" />
+          </div>
+        </div>
+        <div>
+          <a
+            class="image"
+            href="/about/about.html"
+            target="_blank"
+            style="
+              background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg');
+            "
+          ></a>
+          <p>©2024 SPU</p>
+        </div>
+      </div>
+    </div>
+    <svg style="position: fixed; top: 100vh">
+      <defs>
+        <filter id="blob">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="blob"
+          />
+          <!-- feComposite was commented in Pug and not added here -->
+        </filter>
+      </defs>
+    </svg>
+    <script src="script.js"></script>
+  </body>
 </html>
